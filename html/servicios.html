@@ -3,41 +3,66 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/styles.css" />
         <title>Servicios</title>
     </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <div class="nav-bar_logo"></div>
-            <ul class="nav-bar_menu">
-                <li class="nav-bar_item"><a class="nav-bar_link" href="../index.html"><img src="../image/Vector.png" alt="Logo Laurie"></a></li>
-                <li class="nav-bar_item"><a class="nav-bar_link" href="../index.html">Home</a></li>
-                <li class="nav-bar_item"><a class="nav-bar_link" href="sobre.html">Sobre Nosotros</a></li>
-                <li class="nav-bar_item"><a class="nav-bar_link" href="servicios.html">Servicios</a></li>
-                <li class="nav-bar_item"><a class="nav-bar_link" href="consultas.html">Consultas</a></li>
-                <li class="nav-bar_item"><a class="nav-bar_link" href="perfil.html">Perfil</a></li>
+        <nav class="navbar navbar-expand-sm bg-body-tertiary" class="nav-bar">
+            <figure  class="navbar-brand" class="nav-bar_logo"><a class="nav-link" href="../index.html"><img src="../image/Vector.png" alt="Logo Laurie"></a></figure>
+            <ul class="navbar-nav me-auto mb-0 mb-lg-0" class="nav-bar_menu">
+                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="sobre.html">Sobre Nosotros</a></li>
+                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="consultas.html">Consultas</a></li>
+                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
     <main class="main-body">
         <h1>Nuestros Servicios</h1>
-        <div class="main-body_content">
+        <article class="container" class="main-body_content">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure harum est repudiandae quae recusandae sequi, nisi ut id obcaecati? Voluptate amet odio dolore possimus, aliquam debitis commodi distinctio? Assumenda.</p>
-        </div>
-        <div class="services-container">
-            <ul class="services">
-                <li class="services-item">Service 1</li>
-                <li class="services-item">Service 2</li>
-                <li class="services-item">Service 3</li>
-            </ul>
-        </div>
-        <div class="video-container">
-            <video class="video-waves" autoplay loop>
-                <source src="../video/waves.mp4" type="video/mp4">
-            </video>
-        </div>
+        </article>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div id="FOB" class="carousel-item active">
+                <img src="../image/FOB.jpg" class="d-block w-100" alt="Servicios de Transporte">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Servicios de Transporte</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+                </div>
+                <div id="almacen" class="carousel-item">
+                <img src="../image/almacen.jpg" class="d-block w-100" alt="Servicios de Almacenamiento">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Almacenamiento</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+                </div>
+                <div id="seguros" class="carousel-item">
+                <img src="../image/seguros.jpg" class="d-block w-100" alt="Seguros">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Seguros</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="seguros" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="almacen" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
     </main>
     <footer>
         <ul class="footer-links">
