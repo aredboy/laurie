@@ -77,6 +77,7 @@ h1 {
   color: #cae9ff;
   margin: 0 10% 20% 11%;
   max-width: 80%;
+  transition: all 0.3s;
 }
 
 section {
@@ -90,29 +91,50 @@ section {
   background-color: hsl(0deg, 0%, 70%);
   border: none;
   width: 200px;
+  transition: all 0.3s;
   margin: -50px 0 0 14%;
 }
 
 .btn:hover {
-  color: #1b4965;
+  color: #0166d1;
+  background-color: hsla(0deg, 0%, 70%, 0.5);
+}
+
+.btn:active {
+  color: #0166d1;
+  background-color: hsla(0deg, 0%, 70%, 0.2);
 }
 
 .btn-light-form {
-  grid-row-start: 3;
   color: #0166d1;
   background-color: hsl(0deg, 0%, 70%);
   border: none;
   width: 200px;
+  height: 40px;
+  transition: all 0.3s;
+  border-radius: 5px;
   margin: 0 0 0 0;
 }
 
+.btn-light-form:hover {
+  color: #0166d1;
+  background-color: hsla(0deg, 0%, 70%, 0.5);
+}
+
 .btn-light-form1 {
-  grid-row-start: 3;
   color: #0166d1;
   background-color: hsl(0deg, 0%, 70%);
   border: none;
   width: 200px;
-  margin: 20px 0 0 9px;
+  height: 40px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  margin: 20px 0 0 10px;
+}
+
+.btn-light-form1:hover {
+  color: #0166d1;
+  background-color: hsla(0deg, 0%, 70%, 0.5);
 }
 
 @media (max-width: 480px) {
@@ -154,6 +176,63 @@ section {
   margin-top: 0;
 }
 
+@media (max-width: 768px) {
+  .form-control {
+    margin-right: 10px;
+  }
+}
+.col-md-6 {
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.row {
+  margin-right: 10px;
+  width: 98%;
+}
+
+.card {
+  background-color: #153951;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+.card .card-img-top {
+  max-height: 80px;
+}
+.card .card-title {
+  color: #4D9CD1;
+  margin: 0 0 10px;
+}
+.card .card-text {
+  font-size: 15px;
+  margin: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 20px;
+  background: #2E7DB2;
+  box-shadow: inset -20px -20px 60px #1D5072, inset 20px 20px 60px #266792;
+}
+
+@media (max-width: 575px) {
+  .card-img-top {
+    max-width: 280px;
+    max-height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .card-img-top {
+    max-width: 300px;
+    max-height: 400px;
+  }
+}
 footer {
   position: absolute;
   width: 100%;
@@ -161,9 +240,8 @@ footer {
   color: #cae9ff;
 }
 
-.footer-links {
-  list-style-type: none;
-  padding: 15px;
+.row {
+  padding-bottom: 10px;
 }
 
 .footer-links {
