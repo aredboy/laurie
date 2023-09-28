@@ -7,39 +7,68 @@
     <meta name="description" content="Cuando envías con Laurie, tienes acceso a una serie de funcionalidades en línea que harán que tu proceso de envío y, en última instancia, tu día, sean más fáciles. Con el clic de un botón, nuestras funciones electrónicas le permiten reservar, seguir y administrar embarques, y mucho más.">
     <meta name="keywords" content="logística, embarques, seguimiento de embarques, Laurie, envíos internacionales, envíos FOB">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Sobre</title>
+    <title>Nosotros</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-body-tertiary" class="nav-bar">
-            <figure class="navbar-brand" class="nav-bar_logo"><a class="nav-link" href="../index.html"><img
-                        src="../image/Vector.svg" alt="Logo Laurie"></a></figure>
-            <ul class="navbar-nav me-auto mb-0 mb-lg-0" class="nav-bar_menu">
-                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="sobre.html">Sobre Nosotros</a></li>
-                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="consultas.html">Consultas</a></li>
-                <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="perfil.html">Perfil</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-sm bg-light ">
+            <div class="container-fluid">
+                <figure  class="navbar-brand" class="nav-bar_logo"><a class="nav-link" href="../index.html"><img src="../image/Vector.svg" alt="Logo Laurie"></a></figure>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-0 mb-lg-0" class="nav-bar_menu">
+                        <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../html/sobre.html">Nosotros</a></li>
+                        <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../html/servicios.html">Servicios</a></li>
+                        <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../html/consultas.html">Consultas</a></li>
+                        <li class="nav-item" class="nav-bar_item"><a class="nav-link" href="../html/perfil.html">Perfil</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Rastreá tu Embarque" aria-label="Search">
+                        <button class="btn btn-outline-success btn-search" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="main-body">
         <article class="container" class="main-body_content">
             <h1>Sobre Nosotros</h1>
             <section>
-                <p>Somos un equipo de profesionales dedicados a la Logística interoceanica desde hace más de 20 años.
+                <p class="sobre">Somos un equipo de profesionales dedicados a la Logística interoceanica desde hace más de 20 años.
                 </p>
-                <p>El aumento de la complejidad en las cadenas de suministro globales las hace ineficientes, vulnerables e insostenibles. En Laurie, nuestra visión estratégica es convertirnos en el Integrador Global de logística de contenedores, ofreciendo soluciones logísticas verdaderamente integradas que conecten, protejan y simplifiquen las cadenas de suministro de nuestros clientes.
-
-                    Obtén más información sobre cómo estamos acelerando una transición fundamental en la logística global.</p>
+                <p class="sobre">El aumento de la complejidad en las cadenas de suministro globales las hace ineficientes, vulnerables e insostenibles. En Laurie, nuestra visión estratégica es convertirnos en el Integrador Global de logística de contenedores, ofreciendo soluciones logísticas verdaderamente integradas que conecten, protejan y simplifiquen las cadenas de suministro de nuestros clientes.
+                    Obtén más información sobre cómo estamos acelerando una transición fundamental en la logística global.
+                </p>
             </section>
         </article>
         <div class="video-container">
             <video class="video-waves" autoplay loop>
                 <source src="../video/waves.mp4" type="video/mp4">
             </video>
+        </div>
+        <div class="card1 text-bg-dark" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+            <img src="../image/computer.jpg" class="card-img" alt="Computadora">
+            <div class="card-img-overlay">
+                <h4 class="card-title1">Mantenete al día con las noticias de la industria</h4>
+                <p class="card-text1">Subscribite a nuestro newsletter de logística para recibir noticias e información que te permitan recorrer las cadenas logísticas, entender las tendencias de la industria y darle forma a tus estrategias logísticas.</p>
+            </div>
+        </div>
+        <div class="card2 text-bg-dark" data-aos="fade-up"
+        data-aos-duration="3000">
+            <img src="../image/truck.jpg" class="card-img" alt="Camión">
+            <div class="card-img-overlay truck">
+                <h4 class="card-title2">Qué es una cadena logística realmente integrada?</h4>
+                <p class="card-text1">Cuando trabajamos dedicadamente, una cadena de logística integrada puede dar vida a compañías para operar y crecer, haciéndolas resilientes para el presente y sostenibles para el futuro.</p>
+            </div>
         </div>
     </main>
     <footer class="container text-center">
@@ -48,10 +77,14 @@
             <div class="col"><a class="footer-item_link" href="https://www.linkedin.com/in?_l=es_ES">Linkedin</a></div>
             <div class="col"><a class="footer-item_link" href="https://twitter.com/home">Twitter</a></div>
             <div class="col"><a class="footer-item_link" href="https://www.instagram.com/maersk_official/">Instagram</a></div>
-            <div class="col" class="footer-item_link">&copy; 2023 Laurie</div>
+            <div class="col"  class="footer-links">&copy; 2023 Laurie</div>
         </div>
     </footer>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
